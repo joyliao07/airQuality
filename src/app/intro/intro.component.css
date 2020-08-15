@@ -1,0 +1,14 @@
+.Container {
+  background-image: url("../../assets/trees.jpg");
+  height: 900px;
+ }
+
+ .Quote {
+  padding: 100px 7% 0 7%;
+ }
+
+ .CityLink {
+  display:block;
+  text-align:center;
+  padding-top: 5%;
+ }

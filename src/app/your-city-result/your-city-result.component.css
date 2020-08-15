@@ -1,0 +1,71 @@
+.yourCityModal {
+  display: inline-block;
+  height: 210px;
+  width: 450px;
+  margin-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+}
+
+.closeButton {
+  margin-left: 10%;
+}
+
+.flex-child {
+  width: 50%;
+  margin: auto;
+  padding: 6px;
+}
+
+.flex-container {
+  display: flex;
+  padding: 7px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 450;
+}
+
+.data {
+  font-size: 18px;
+  font-weight: 325;
+  margin: auto;
+}
+
+
+.statusButton {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.buttonGreen {
+  background-color: green;
+}
+
+.buttonYellow {
+  background-color: yellow;
+}
+
+.buttonRed {
+  background-color: Red;
+}
+
+.notClean {
+  display: none;
+}
+
+.notDirty {
+  display: none;
+}
+
+.notMiddle {
+  display: none;
+}
+
+.statusButton > p {
+  margin-left: 50px;
+  font-size: 20px;
+  width: 100px;
+}

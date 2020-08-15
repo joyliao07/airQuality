@@ -1,0 +1,75 @@
+<div class="body">
+  <div class="city">
+    <button class="btn btn-primary" (click)="fetchYourCityData()">Where you are</button>
+  </div>
+  <app-your-city-result [result]="loadedYourCity"></app-your-city-result>
+
+  <div class="region">
+    <h2>America</h2>
+
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchSeattle()">Seattle, USA</button>
+    </div>
+    <app-your-city-result [result]="loadedSeattle"></app-your-city-result>
+
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchNY()">New York, USA</button>
+    </div>
+    <app-your-city-result [result]="loadedNY"></app-your-city-result>
+
+  </div>
+
+  <div class="region">
+    <h2>Asia</h2>
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchNewDelhi()">New Delhi, India</button>
+    </div>
+    <app-your-city-result [result]="loadedNewDelhi"></app-your-city-result>
+
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchHK()">Hong Kong, HK</button>
+    </div>
+    <app-your-city-result [result]="loadedHK"></app-your-city-result>
+
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchSingapore()">Singapore, SG</button>
+    </div>
+    <app-your-city-result [result]="loadedSingapore"></app-your-city-result>
+
+  </div>
+
+  <div class="region">
+    <h2>Europe</h2>
+
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchParis()">Paris, French</button>
+    </div>
+    <app-your-city-result [result]="loadedParis"></app-your-city-result>
+
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchFerrandina()">Ferrandina, Italy</button>
+    </div>
+    <app-your-city-result [result]="loadedFerrandina"></app-your-city-result>
+
+  </div>
+
+
+  <div class="region">
+    <h2>Middle East</h2>
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchTehran()">Tehran, Iran</button>
+    </div>
+    <app-your-city-result [result]="loadedTehran"></app-your-city-result>
+
+    <div class="city">
+      <button class="btn btn-primary" (click)="fetchAnkara()">Ankara, Turkey</button>
+    </div>
+    <app-your-city-result [result]="loadedAnkara"></app-your-city-result>
+
+  </div>
+
+  <div class="request">
+    <button class="btn btn-info" (click)="requestData()">Request More Data</button>
+  </div>
+
+</div>

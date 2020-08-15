@@ -1,0 +1,41 @@
+<div class="yourCityModal" *ngIf="result.status === 'success'">
+  <div>
+    <ul>
+      <li class="list-group-item">
+        <div class="flex-container">
+            <p class="flex-child title">City: </p>
+            <div class="flex-child">
+              <p class="data">{{result.data.city}}</p>
+            </div>
+        </div>
+
+        <div class="flex-container">
+          <p class="flex-child title">Aquis: </p>
+          <div class="flex-child">
+            <p class="data">{{result.data.current.pollution.aqius}}</p>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <p class="flex-child title">Air Quality:</p>
+          <div class="flex-child">
+            <div class="statusButton"
+              [ngClass]="{
+                'buttonGreen' : result.data.current.pollution.aqius<=25,
+                'buttonYellow' : result.data.current.pollution.aqius>25 && result.data.current.pollution.aqius<=50,
+                'buttonRed' : result.data.current.pollution.aqius>50}">
+              <p [ngClass]="{'notClean' : result.data.current.pollution.aqius>25}">Clean</p>
+              <p [ngClass]="{'notMiddle' : result.data.current.pollution.aqius<=25 || result.data.current.pollution.aqius>50}">Median</p>
+              <p [ngClass]="{'notDirty' : result.data.current.pollution.aqius<=50}">Polluted</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="yourCityAction">
+        <button class="btn closeButton" (click)="clearResult()">
+          Close
+        </button>
+    </div>
+  </div>
+</div>

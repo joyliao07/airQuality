@@ -1,0 +1,21 @@
+.body {
+  padding: 4% 10% 10% 10%;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+img {
+  border-radius: 4%;
+  width: 28%;
+}
+
+.description {
+  padding-top: 4%;
+}
+
+.links {
+  padding-top: 10%;
+}

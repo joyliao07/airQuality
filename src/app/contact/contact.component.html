@@ -1,0 +1,27 @@
+<div class="container">
+  <h2 class="text-center mb-5">Contact Me</h2>
+  <div class="message">
+    <p>Thank you for using the app. Please feel free to contact me with any questions or if you would like to request the data of a new city. I look forward to hearing from you!</p>
+  </div>
+  <div class="row entire-form">
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"formControlName="Email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+          <div class="form-group">
+          <label for="fullname">Your Name</label>
+          <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="comment">Message</label>
+          <textarea class="form-control" formControlName="Comment" name="Comment">
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
