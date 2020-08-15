@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
+Air-quality web app allows you to check the air quality around the world with one click.
+
 ## Deployed Site
 
 Please visit https://airquality-4207e.firebaseapp.com/ for the deployed website.
