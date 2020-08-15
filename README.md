@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Deployed Site
 
-Please visit [https://airquality-4207e.firebaseapp.com/] (https://airquality-4207e.firebaseapp.com/) for the deployed website.
+Please visit https://airquality-4207e.firebaseapp.com/ for the deployed website.
 
 ## Development server
 
