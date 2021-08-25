@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+      "target": "'https://api.airvisual.com/*",
+      "secure": false,
+      "logLevel": "debug"
+  }
+}
