@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "airquality-4207e"
-  },
-  "targets": {
-    "airquality-4207e": {
-      "hosting": {
-        "air-app": [
-          "airquality-4207e"
-        ]
-      }
-    }
+    "default": "airquality-app-ea704"
   }
 }
