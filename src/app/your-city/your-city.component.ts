@@ -29,7 +29,12 @@ export class YourCityComponent implements OnInit {
 
   fetchYourCityData() {
     // https://api-docs.airvisual.com/?version=latest
-    this.http.get("https://api.airvisual.com/v2/nearest_city?key=" + environment.airVisualAPI)
+    // https://air-quality-proxy.herokuapp.com/
+    // this.http.get("https://api.airvisual.com/v2/nearest_city?key=" + environment.airVisualAPI)
+    // .subscribe(data => {
+    //   this.loadedYourCity = data;
+    // });
+    this.http.get("https://air-quality-proxy.herokuapp.com")
     .subscribe(data => {
       this.loadedYourCity = data;
     });
