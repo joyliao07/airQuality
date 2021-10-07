@@ -1,9 +1,4 @@
 <div class="body">
-  <div class="city">
-    <button class="btn btn-primary" (click)="fetchYourCityData()">Where you are</button>
-  </div>
-  <app-your-city-result [result]="loadedYourCity"></app-your-city-result>
-
   <div class="region">
     <h2>America</h2>
 
@@ -27,14 +22,16 @@
     <app-your-city-result [result]="loadedNewDelhi"></app-your-city-result>
 
     <div class="city">
-      <button class="btn btn-primary" (click)="fetchHK()">Hong Kong, HK</button>
-    </div>
-    <app-your-city-result [result]="loadedHK"></app-your-city-result>
-
-    <div class="city">
       <button class="btn btn-primary" (click)="fetchSingapore()">Singapore, SG</button>
     </div>
     <app-your-city-result [result]="loadedSingapore"></app-your-city-result>
+
+    <!--
+    <div class="city">
+      <button class="btn btn-primary"
+              (click)="fetchHK()">Hong Kong</button>
+    </div>
+    <app-your-city-result [result]="loadedHK"  [errorHK]="loadErr"></app-your-city-result> -->
 
   </div>
 

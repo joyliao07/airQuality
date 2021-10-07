@@ -9,6 +9,7 @@ import { Post } from "../your-city/your-city.model";
 export class YourCityResultComponent implements OnInit {
 
   @Input() result: Post;
+  @Input() errorHK: boolean;
 
   constructor() { }
 
