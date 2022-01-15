@@ -1,10 +1,13 @@
 # AirApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
-Firebase domain airquality-app-ea704.firebaseapp.com
 
-## Deployed site
-Please visit https://airquality-app-ea704.web.app/
+AirQuality allows users to check the degrees of air pollution in cities worldwide, in real time, by reading the “aqius” index. Users can request new cities to be added to the website by filling out the contact form on the website.
+
+**Tech Stack:** Angular, TypeScript, Node js, HTML, CSS, Firebase, RESTful API
+
+## Website
+Please visit the deployed website https://airquality-app-ea704.web.app/
 
 ## Development server
 
